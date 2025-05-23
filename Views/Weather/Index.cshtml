@@ -1,11 +1,40 @@
-﻿<h2>Check Weather</h2>
+﻿@{
+    ViewData["Title"] = "Weather Dashboard";
+}
+
+<h2>Check Weather</h2>
 <form method="post" asp-action="GetWeather">
     <input type="text" name="city" placeholder="Enter city" required />
     <button type="submit">Get Weather</button>
 </form>
 
+<hr />
+
 <h2>Reverse Text</h2>
 <form method="post" asp-action="Reverse">
     <input type="text" name="input" placeholder="Type something" required />
     <button type="submit">Reverse</button>
+</form>
+
+<hr />
+
+<h2>Add Two Numbers</h2>
+<form method="post" asp-action="Add">
+    <input type="number" name="a" placeholder="First number" required />
+    <input type="number" name="b" placeholder="Second number" required />
+    <button type="submit">Add</button>
+</form>
+
+<hr />
+
+<h2>Get Current Time</h2>
+<form method="get" asp-action="Time">
+    <button type="submit">Get Time</button>
+</form>
+
+<hr />
+
+<h2>Get Random Number</h2>
+<form method="get" asp-action="Random">
+    <button type="submit">Get Random</button>
 </form>
